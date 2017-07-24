@@ -1,19 +1,21 @@
 ---
 title: “Hexo 系列(5) 站内搜索”
-date: 2017-07-20 15:15:04
+date: 2017-07-20 19:25:09
 tags: 博客
 categories: 技术
 toc: true
 ---
+主要是 Local Search，Algolia 最新版本一直配置失败， Swiftype需要企业邮箱
+<!-- more -->
+# 1. 使用Local Search
 
-# 使用Local Search 
+## 1.1. 安装 hexo-generator-searchdb，
 
-## 安装 hexo-generator-searchdb，
+## 1.2. 在站点的根目录下执行以下命令：
 
-## 在站点的根目录下执行以下命令：  
-  ```$ npm install hexo-generator-searchdb --save```
+  `npm install hexo-generator-searchdb --save`
 
-## 编辑 `站点配置`文件，新增以下内容到任意位置：
+## 1.3. 编辑 `站点配置`文件，新增以下内容到任意位置：
 
 ```
 search:
@@ -23,7 +25,7 @@ search:
   limit: 10000
 ```
 
-## 编辑 `主题配置`文件，启用本地搜索功能：
+## 1.4. 编辑 `主题配置`文件，启用本地搜索功能：
 
 ```
 # Local search
@@ -31,11 +33,11 @@ local_search:
   enable: true
 ```
 
-## Algolia 最新版本一直配置失败
+## 1.5. Algolia 最新版本一直配置失败
 
-## Swiftype需要企业邮箱
+## 1.6. Swiftype需要企业邮箱
 
-# 参考文献
+# 2. 参考文献
 
 [hexo干货系列：（五）hexo添加站内搜索 用swiftype ](http://tengj.github.io/2016/03/11/hexo5Swiftype/)
 

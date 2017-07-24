@@ -1,15 +1,17 @@
 ---
-title: “Hexo 系列(7) 报错总结”
-date: 2017-07-23 15:15:04
+title: “Hexo 系列(6) 报错总结”
+date: 2017-07-23 19:15:10
 tags: 博客
 categories: 技术
 toc: true
 ---
-# npm install hexo --no-optional不好使
+使用中的一些错误总结
+<!-- more -->
+# 1. npm install hexo --no-optional不好使
 
 更换npm淘宝镜像https://npm.taobao.org/
 
-# ERROR Deployer not found: git 或者 ERROR Deployer not found: github
+# 2. ERROR Deployer not found: git 或者 ERROR Deployer not found: github
 
 解决方法： npm install hexo-deployer-git --save
 
@@ -17,7 +19,7 @@ toc: true
 
 `rm -rf .DS_Store`
 
-# ERROR Plugin load failed: hexo-server
+# 3. ERROR Plugin load failed: hexo-server
 
 原因：
 
@@ -27,7 +29,7 @@ Besides,utilities are separated into a standalone module.hexo.util is not reacha
 
 `sudo npm install hexo-server`
 
-# 执行命令hexo server，提示：Usage: hexo ....
+# 4. 执行命令hexo server，提示：Usage: hexo ....
 
 原因：没有生成本地服务
 

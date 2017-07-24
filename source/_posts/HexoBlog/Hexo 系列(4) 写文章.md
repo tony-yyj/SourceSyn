@@ -1,19 +1,12 @@
 ---
 title: “Hexo 系列(4) 开始写文章”
-date: 2017-07-20 15:15:04
+date: 2017-07-20 19:18:08
 tags: 博客
 categories: 技术
 toc: true
 ---
-<!-- TOC -->
-
-- [1. 创建和发布文章](#1-创建和发布文章)
-- [2. 通过插件在文章内插入图片](#2-通过插件在文章内插入图片)
-- [3. 普通插入图片](#3-普通插入图片)
-- [4. 代码样式](#4-代码样式)
-- [5. 参考文献](#5-参考文献)
-
-<!-- /TOC -->
+创建和发布文章、通过插件在文章内插入图片、普通插入图片、代码样式
+<!-- more -->
 
 # 1. 创建和发布文章
 
@@ -44,5 +37,35 @@ toc: true
 
 文件地址 `/source/css/_partial/highlight.styl`
 
+# 文章的模板文件
+
+文章模板，如果你是用 `hexo new post “title”` 新建的文章，那么其实它就是从 `~/blog/scaffolds/post.md`复制了一份到~/blog/source/_posts下，
+所以这也意味着你可以直接通过在`~/blog/source/_posts`下新建.md结尾的文件来写新的文章。
+
+但是注意，如果自己直接新建文件，一定要记得加上文件最上方的参数，即下面的相关内容。
+
+关于此模板文件，里面的参数说明参见Hexo官方文档。注意！每一项的:后面均有一个空格
+
+```json
+---
+title: {{ title }} /*文章标题*/
+date: {{ date }} /*日期*/
+permalink: /*永久链接，如果设置，且在站点配置文件下的permalink设置了title，则可以替换title*/
+categories: /*分类，支持多级，比如：
+- technology
+- computer
+- computer-aided-art
+则为technology/computer/computer-aided-art*/
+tags: /*标签，多个可以这样写[标签1,标签2,标签3]*/
+description: /*描述，加了会在每篇文章的开头显示*/
+comments: /*是否开启评论*/
+type: /*类型*/
+top: /*文章置顶，此项只有参考操作26(http://shenzekun.cn/hexo的next主题个性化配置教程.html)，否则请勿添加*/
+password: /*文章密码，此项只有参考操作24(http://shenzekun.cn/hexo的next主题个性化配置教程.html)，否则请勿添加。发现还是有bug的，就是右键在新标签中打开，然后无论是否输入密码，都能看到内容*/
+---
+
+```
+
 # 5. 参考文献
+
 [使用github+Hexo人人都能拥有一个美美的博客](http://www.jianshu.com/p/863f3f2d1733)
