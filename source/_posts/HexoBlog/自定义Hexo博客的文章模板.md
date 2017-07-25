@@ -3,8 +3,8 @@ title: 自定义Hexo博客的文章模板
 date: 2017-07-25 16:12:16
 tags:
 ---
-[自定义Hexo博客的文章、草稿和页面的模板](http://blog.xinspace.space/2016/04/11/%E8%87%AA%E5%AE%9A%E4%B9%89Hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%81%E8%8D%89%E7%A8%BF%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%A8%A1%E6%9D%BF/)
-
+每篇文章源代码的开头部分自定义，博客模版
+<!-- more -->
 # 1. 博客模版（Scaffold）
 
 scaffolds文件夹：
@@ -46,3 +46,6 @@ hexo new photo "My Gallery"
 
 可编辑网站配置文件`_config.yml`中的 new_post_name 参数来改变默认的文件名称，
 举例来说，设为 :year-:month-:day-:title.md 可让您更方便的通过日期来管理文章。
+
+
+[自定义Hexo博客的文章、草稿和页面的模板](http://blog.xinspace.space/2016/04/11/%E8%87%AA%E5%AE%9A%E4%B9%89Hexo%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%96%87%E7%AB%A0%E3%80%81%E8%8D%89%E7%A8%BF%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E6%A8%A1%E6%9D%BF/)
