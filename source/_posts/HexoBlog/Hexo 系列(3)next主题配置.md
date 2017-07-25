@@ -181,6 +181,21 @@ copyright: false
 
 登录 `百度统计`，定位到站点的代码获取页面
 复制 hm.js? 后面那串统计脚本 id
+
+# 11. 侧边栏推荐阅读
+
+打开主题配置文件修改(links里面写你想要的推荐链接):
+
+```yml
+# Blogrolls
+links_title: 推荐阅读
+#links_layout: block
+links_layout: inline
+links:
+  百度前端技术学院: http://ife.baidu.com/
+
+```
+
 参考文献：
 
 [++主题配置 - NexT 使用文档](http://theme-next.iissnan.com/theme-settings.html#site-since)

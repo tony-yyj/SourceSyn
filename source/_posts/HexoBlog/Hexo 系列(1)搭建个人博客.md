@@ -96,7 +96,7 @@ $ hexo g
 git clone https://github.com/iissnan/hexo-theme-next  themes/next
 ```
 
-## 5.2. 设置主题
+## 5.2. 启用主题
 
 在网站配置文件**_config.yml**中，设置**theme**
 
@@ -114,6 +114,14 @@ git clone https://github.com/iissnan/hexo-theme-next  themes/next
 hexo clean
 hexo g
 hexo s
+```
+## 5.4. 更新主题
+
+在主题更新之前，一定要备份好主题目录下的_config.yml文件，尤其是到后面修改了很多配置之后。
+
+```
+cd themes/jacman
+git pull origin master
 ```
 
 # 6. 部署到Github

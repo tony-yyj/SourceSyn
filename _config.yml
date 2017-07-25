@@ -38,7 +38,7 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 不想被渲染的路径
-skip_render: baidu_verify_j461ONwJ3o.html
+skip_render: [baidu_verify_j461ONwJ3o.html, google39383651a5a98b1e.html]
 
 # 写作配置
 # Writing
