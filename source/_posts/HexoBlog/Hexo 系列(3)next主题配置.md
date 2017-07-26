@@ -197,9 +197,35 @@ links:
 
 ```
 
+# 12. 在右上角或者左上角实现fork me on github
 
+点击[https://github.com/blog/273-github-ribbons](https://github.com/blog/273-github-ribbons) 挑选自己喜欢的样式，并复制代码。
+例如我的代码是：
+```
+<a href="https://github.com/mashangxue"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+```
+然后粘贴刚才复制的代码到 `themes/next/layout/_layout.swig`文件中(放在<div class="headband"></div>的下面)，
+并把href改为你的github地址.
 
-参考文献：
+# 13. 添加 LiveRe 评论支持
+
+进入 https://livere.com/，注册账号, 生成代码，data-uid 即为所需 uid
+
+站点配置文件中设置： `livere_uid: your uid`
+
+[hexo从多说评论转为韩国来必力评论](https://zengmianhui.github.io/2017/05/02/hexo%E4%BB%8E%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA%E8%BD%AC%E4%B8%BA%E9%9F%A9%E5%9B%BD%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA/)
+
+# 集成百度分享
+
+编辑 站点配置文件中
+
+```yml
+baidushare: 
+  type: button #百度分享展示的方式button|slide
+
+```
+
+# 14. 参考文献：
 
 [++主题配置 - NexT 使用文档](http://theme-next.iissnan.com/theme-settings.html#site-since)
 

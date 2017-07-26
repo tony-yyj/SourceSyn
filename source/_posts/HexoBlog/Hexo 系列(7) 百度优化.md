@@ -177,3 +177,7 @@ baidusitemap:
 [Hexo 优化：提交 sitemap 及解决百度爬虫无法抓取 GitHub Pages 链接问题](http://www.yuan-ji.me/Hexo-%E4%BC%98%E5%8C%96%EF%BC%9A%E6%8F%90%E4%BA%A4sitemap%E5%8F%8A%E8%A7%A3%E5%86%B3%E7%99%BE%E5%BA%A6%E7%88%AC%E8%99%AB%E6%8A%93%E5%8F%96-GitHub-Pages-%E9%97%AE%E9%A2%98/)
 
 [Hexo NexT 主题SEO优化指南](https://lancelot_lewis.coding.me/2016/08/16/blog/Hexo-NexT-SEO/)
+
+[动动手指，不限于NexT主题的Hexo优化（SEO篇）](http://www.arao.me/2015/hexo-next-theme-optimize-seo/)
+
+[将hexo博客部署到coding.net](http://www.ieclipse.cn/2016/09/08/Web/hexo-coding-pages/index.html)
