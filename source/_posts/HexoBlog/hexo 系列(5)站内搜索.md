@@ -1,9 +1,10 @@
 ---
 title: “Hexo 系列(5) 站内搜索”
-date: 2017-07-20 19:25:09
 tags: 博客
 categories: 技术
 toc: true
+abbrlink: 3011403515
+date: 2017-07-20 19:25:09
 ---
 主要是 Local Search，Algolia 最新版本一直配置失败， Swiftype需要企业邮箱
 <!-- more -->

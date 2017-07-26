@@ -1,5 +1,6 @@
 ---
 title: Hexo 多台电脑同步 源码保存
+abbrlink: 3611120980
 date: 2017-07-25 17:42:19
 tags:
 categories:
@@ -32,7 +33,7 @@ public内的文件可以根据source文件夹内容自动生成的，不需要�
 
 ```bash
 git init    
-git remote add origin <server> # 将本地仓库映射到托管服务器的仓库
+git remote add origin https://github.com/mashangxue/SourceSyn.git # 将本地仓库映射到托管服务器的仓库
 ```
 
 server是仓库的在线目录地址，可以从git上直接复制过来，origin是本地分支，remote add会将本地仓库映射到托管服务器的仓库上。
@@ -68,7 +69,7 @@ npm install hexo-deployer-git --save # 部署安装 hexo-deployer-git
 
 ```bash
 git init       #将目录添加到版本控制系统中    
-git remote add origin <server>  #将本地仓库映射到托管服务器的仓库上    
+git remote add origin git remote add origin https://github.com/mashangxue/SourceSyn.git #将本地仓库映射到托管服务器的仓库上    
 git fetch --all  #将git上所有文件拉取到本地    
 git reset --hard origin/master  #强制将本地内容指向刚刚同步git云端内容,用远端文件覆盖本地相同文件
 ```

@@ -1,9 +1,10 @@
 ---
 title: “npm 使用”
-date: 2017-07-23 18:15:11
 tags: 博客
 categories: 技术
 toc: true
+abbrlink: 3473012492
+date: 2017-07-23 18:15:11
 ---
 淘宝 NPM 镜像配置，基本命令使用
 <!-- more -->

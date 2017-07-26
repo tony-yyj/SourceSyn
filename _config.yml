@@ -23,9 +23,13 @@ timezone:
 url: http://www.mashangxue123.com/
 # 站点根目录
 root: /
-# 文章的永久网址链接，默认是:year/:month/:day/:title/，。
-permalink: :year/:month/:day/:title/
+# 文章的永久网址链接，默认是:year/:month/:day/:title/，。 文章链接优化:title/
+permalink: :abbrlink/
 permalink_defaults:
+# abbrlink config  https://github.com/Rozbo/hexo-abbrlink
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32 
+  rep: dec    # 进制：dec(default) and hex
 
 # 目录配置：
 # Directory
@@ -43,7 +47,7 @@ skip_render: [baidu_verify_j461ONwJ3o.html, google39383651a5a98b1e.html]
 # 写作配置
 # Writing
 # 新建文章默认文件名
-new_post_name: :year-:month-:day-:title.md # File name of new posts
+new_post_name: :title.md # File name of new posts  :year-:month-:day-
 # 默认布局
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -114,6 +118,12 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+baidu_url_submit:
+    count: 3 ## 比如3，代表提交最新的三个链接
+    host: www.mashangxue123.com ## 在百度站长平台中注册的域名
+    token: TQVONCgS1qc1IF5A ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+    path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 search:
   path: search.xml
   field: post
@@ -134,6 +144,7 @@ theme: next
 # Deployment 部署配置，将本地public目录也就是网站部署到服务器上的配置
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/mashangxue/mashangxue.github.io.git
-  branch: master
+  - type: git
+    repo: https://github.com/mashangxue/mashangxue.github.io.git
+    branch: master
+  - type: baidu_url_submitter

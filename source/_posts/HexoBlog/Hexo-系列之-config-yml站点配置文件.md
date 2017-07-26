@@ -1,5 +1,6 @@
 ---
 title: Hexo 系列之 _config.yml站点配置文件
+abbrlink: 982564298
 date: 2017-07-25 17:17:34
 tags:
 categories:

@@ -1,9 +1,10 @@
 ---
 title: “Hexo 系列(6) 报错总结”
-date: 2017-07-22 19:15:10
 tags: 博客
 categories: 技术
 toc: true
+abbrlink: 1607465674
+date: 2017-07-22 19:15:10
 ---
 使用中的一些错误总结
 <!-- more -->
