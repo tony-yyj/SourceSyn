@@ -148,4 +148,4 @@ deploy:
   - type: git
     repo: https://github.com/mashangxue/mashangxue.github.io.git
     branch: master
-  - type: baidu_url_submitter
+  #- type: baidu_url_submitter

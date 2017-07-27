@@ -7,6 +7,7 @@ categories:
 ---
 热门阅读
 <!-- more -->
+```js
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("{{theme.leancloud_visitors.app_id}}", "{{theme.leancloud_visitors.app_key}}");</script>
 <script type="text/javascript">
@@ -30,3 +31,4 @@ categories:
     console.log("error");
   });
 </script>
+```
