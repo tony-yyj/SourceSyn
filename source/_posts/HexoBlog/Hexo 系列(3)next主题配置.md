@@ -44,15 +44,19 @@ recent_posts: true
 
 # 2. 设置右侧栏头像
 
-编辑站点配置文件，添加如下内容
+编辑站点配置文件 `_config.yml`，添加如下内容
 
-`avatar: your avatar url`
+`avatar: XX.jpg`
 
-其中，your avatar url可以是：
+其中，XX.jpg可以是：
 
 (1) 完整的互联网URL，你可以先将设置的头像图片放到图床上；
 
-(2) 本地地址：如/upload/image/avatar.png (你需要将avatar.png文件放在/站点目录/source/upload/image/里面)。
+(2) 站点内的地址，例如：
+
+- /uploads/mashangxue123.jpg 需要将你的头像图片放置在 站点的 source/uploads/（可能需要新建uploads目录）
+- `avatar: /images/mashangxue123.jpg` 需要将你的头像图片放置在 主题的 source/images/ 目录下。
+
 
 # 3. 首页文章以摘要形式显示
 
