@@ -2,8 +2,10 @@
 title: 将hexo博客同时部署到github和coding
 abbrlink: 1174015716
 date: 2017-07-27 14:15:45
-tags:
-categories:
+tags: 
+    - github
+    - Hexo
+categories: Hexo搭建博客
 ---
 本篇主要讲一下具体应该怎么配置才能实现hexo静态博客github coding双线部署，通过域名解析（万网 DNSpod）实现国内用户访问coding服务器，国外用户访问github服务器。
 <!-- more -->

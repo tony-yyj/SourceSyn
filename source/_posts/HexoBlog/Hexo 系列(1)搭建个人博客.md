@@ -1,7 +1,9 @@
 ---
 title: “Hexo 系列(1) 搭建个人博客”
-tags: 博客
-categories: 技术
+tags: 
+    - Hexo
+    - Next主题
+categories: Hexo搭建博客
 abbrlink: 404368343
 date: 2017-07-20 19:15:04
 ---

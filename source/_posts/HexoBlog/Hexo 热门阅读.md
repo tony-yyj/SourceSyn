@@ -2,8 +2,10 @@
 title: Hexo 添加热门阅读
 abbrlink: 2683804451
 date: 2017-07-26 21:30:09
-tags:
-categories:
+tags: 
+    - Hexo
+    - Next主题
+categories: Hexo搭建博客
 ---
 热门阅读
 <!-- more -->

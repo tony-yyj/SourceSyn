@@ -2,8 +2,10 @@
 title: Hexo 系列之 _config.yml站点配置文件
 abbrlink: 982564298
 date: 2017-07-25 17:17:34
-tags:
-categories:
+tags: 
+    - Hexo
+    - Hexo优化
+categories: Hexo搭建博客
 ---
 博客根目录下_config.yml站点配置文件。
 <!-- more -->

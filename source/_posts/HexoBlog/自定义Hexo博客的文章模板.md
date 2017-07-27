@@ -2,7 +2,10 @@
 title: 自定义Hexo博客的文章模板
 abbrlink: 353523292
 date: 2017-07-25 16:12:16
-tags:
+tags: 
+    - Hexo
+    - Hexo优化
+categories: Hexo搭建博客
 ---
 每篇文章源代码的开头部分自定义，博客模版
 <!-- more -->

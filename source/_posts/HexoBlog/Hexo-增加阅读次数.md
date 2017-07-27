@@ -2,8 +2,11 @@
 title: Hexo 增加阅读次数
 abbrlink: 2160352618
 date: 2017-07-26 21:23:57
-tags:
-categories:
+tags: 
+    - Hexo
+    - Hexo优化
+    - Next主题
+categories: Hexo搭建博客
 ---
 
 <!-- more -->

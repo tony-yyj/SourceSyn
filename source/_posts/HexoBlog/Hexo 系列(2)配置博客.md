@@ -1,7 +1,10 @@
 ---
 title: “Hexo 系列(2) 博客配置，添加标签和分类”
-tags: 博客
-categories: 技术
+tags: 
+    - Hexo优化
+    - Hexo
+    - Next主题
+categories: Hexo搭建博客
 toc: true
 abbrlink: 2475404191
 date: 2017-07-20 19:15:06

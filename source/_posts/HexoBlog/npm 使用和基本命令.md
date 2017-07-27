@@ -1,7 +1,11 @@
 ---
 title: “npm 使用”
-tags: 博客
-categories: 技术
+tags: 
+    - npm
+    - Hexo
+categories: 
+    - Hexo搭建博客
+    - 前端
 toc: true
 abbrlink: 3473012492
 date: 2017-07-23 18:15:11

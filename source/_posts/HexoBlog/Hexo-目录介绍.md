@@ -2,8 +2,9 @@
 title: Hexo 目录介绍
 abbrlink: 2286160507
 date: 2017-07-25 16:37:57
-tags:
-categories:
+tags: 
+    - Hexo
+categories: Hexo搭建博客
 ---
 # 默认目录结构介绍：
 <!-- more -->

@@ -1,7 +1,8 @@
 ---
 title: “Hexo 系列(4) 开始写文章”
-tags: 博客
-categories: 技术
+tags: 
+    - Hexo
+categories: Hexo搭建博客
 toc: true
 abbrlink: 4107693517
 date: 2017-07-20 19:18:08

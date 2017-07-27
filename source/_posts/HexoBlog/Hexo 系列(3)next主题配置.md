@@ -1,7 +1,10 @@
 ---
 title: “Hexo 系列(3) Next 主题配置”
-tags: 博客
-categories: 技术
+tags: 
+    - Hexo
+    - Hexo优化
+    - Next主题
+categories: Hexo搭建博客
 toc: true
 abbrlink: 3927767946
 date: 2017-07-20 19:17:07
@@ -215,7 +218,7 @@ links:
 
 [hexo从多说评论转为韩国来必力评论](https://zengmianhui.github.io/2017/05/02/hexo%E4%BB%8E%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA%E8%BD%AC%E4%B8%BA%E9%9F%A9%E5%9B%BD%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA/)
 
-# 集成百度分享
+# 14. 集成百度分享
 
 编辑 站点配置文件中
 
@@ -225,7 +228,28 @@ baidushare:
 
 ```
 
-# 14. 参考文献：
+# 15. 关键词keywords
+
+默认next主题的文章关键字取文章的标签，所以如果想要设置很全的关键字，肯定会造成自己的标签页的标签过多，看着过于杂乱.
+
+- 文章的头部新增 keywords 字段，新建文章的时候设置。
+- 在next主题的配置_config.yml文件，设置主题的keywords。
+
+涉及代码/themes/layout/_partial/Head.swg中,
+从代码可以看出，优先使用page中的关键字keywords，然后是page中的tags，最后是主题中的关键字。
+
+```swig
+{% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}" />
+{% elif page.tags and page.tags.length %}
+  <meta name="keywords" content="{% for tag in page.tags %}{{ tag.name }},{% endfor %}" />
+{% elif theme.keywords %}
+  <meta name="keywords" content="{{ theme.keywords }}" />
+{% endif %}
+```
+
+
+# 16. 参考文献：
 
 [++主题配置 - NexT 使用文档](http://theme-next.iissnan.com/theme-settings.html#site-since)
 

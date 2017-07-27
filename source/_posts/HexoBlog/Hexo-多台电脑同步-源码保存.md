@@ -2,8 +2,10 @@
 title: Hexo 多台电脑同步 源码保存
 abbrlink: 3611120980
 date: 2017-07-25 17:42:19
-tags:
-categories:
+tags: 
+    - Hexo
+    - Hexo优化
+categories: Hexo搭建博客
 ---
 多台电脑同步博客源码，首先要把最新的源码上传到git上，然后在其它电脑上搭建Hexo环境后同步博客源码。 前提是两台电脑都能连上git，主要是都配置了 `git ssh`密钥连接
 <!-- more -->
