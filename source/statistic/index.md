@@ -1,14 +1,7 @@
 ---
-title: Hexo 添加热门阅读
-abbrlink: 2683804451
-date: 2017-07-26 21:30:09
-tags: 
-    - Hexo
-    - Next主题
-categories: Hexo搭建博客
+title: statistic
+date: 2017-07-27 20:50:29
 ---
-热门阅读
-<!-- more -->
 
 <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
 <script>AV.initialize("{{theme.leancloud_visitors.app_id}}", "{{theme.leancloud_visitors.app_key}}");</script>
