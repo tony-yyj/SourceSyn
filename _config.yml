@@ -140,7 +140,7 @@ algolia:
 
 ## Themes: https://hexo.io/themes/主题配置
 # maupassant  next yilia jacman
-theme: next
+theme: hexo-theme-next
 
 # Deployment 部署配置，将本地public目录也就是网站部署到服务器上的配置
 ## Docs: https://hexo.io/docs/deployment.html
