@@ -83,3 +83,5 @@ qiniu:
 [Hexo七牛图床使用 - Roylee Blog From A iOS Developer  ](http://error408.com/2016/08/02/Hexo%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8/)
 
 [gyk001/hexo-qiniu-sync](https://github.com/gyk001/hexo-qiniu-sync)
+
+[Hexo 七牛同步插件的使用](http://www.ixirong.com/2016/10/31/how-to-use-hexo-qiniu-sync-plugin/)
