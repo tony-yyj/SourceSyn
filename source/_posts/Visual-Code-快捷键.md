@@ -1,19 +1,19 @@
 ---
 title: Visual Code 快捷键
-date: 2017-07-28 17:35:10
-tags: [Visual Code, 编辑器]
+tags:
+  - Visual Code
+  - 编辑器
 categories: 开发工具
+abbrlink: 736053491
+date: 2017-07-28 17:35:10
 ---
 
 <!-- more -->
-#Visual Code 快捷键
-## 主命令框 Command Palette
-
-命令面板
+# 1. 主命令框 Command Palette
 
 最重要的功能就是`F1`或`Ctrl+Shift+P`打开的命令面板了，在这个命令框里可以执行VSCode的任何一条命令，可以查看每条命令对应的快捷键，甚至可以关闭这个编辑器。
 
-## Ctrl+P
+# 2. Ctrl+P
 
 - 直接输入文件名，快速打开文件
 - ? 列出当前可执行的动作
@@ -23,14 +23,13 @@ categories: 开发工具
 - @:根据分类跳转symbol，查找属性或函数，也可以Ctrl+Shift+O后输入:进入
 - 根据名字查找symbol，也可以Ctrl+T
 
-# 编辑器与窗口管理
 
-## 同时打开多个窗口（查看多个项目）
+# 3. 同时打开多个窗口
 
 - 打开一个新窗口： Ctrl+Shift+N
 - 关闭窗口： Ctrl+Shift+W
 
-## 同时打开多个编辑器（查看多个文件）
+# 4. 同时打开多个编辑器
 
 - 新建文件 Ctrl+N
 - 历史打开文件之间切换 Ctrl+Tab，Alt+Left，Alt+Right
@@ -40,9 +39,8 @@ categories: 开发工具
 - 编辑器换位置，Ctrl+k然后按Left或Right
 
 
-## 代码编辑
 
-### 格式调整
+# 5. 代码格式调整
 
 *   代码行缩进`Ctrl+[`， `Ctrl+]`
 *   折叠打开代码块 `Ctrl+Shift+[`， `Ctrl+Shift+]`
@@ -53,7 +51,7 @@ categories: 开发工具
 *   向上向下复制一行： `Shift+Alt+Up`或`Shift+Alt+Down`
 *   在当前行下边插入一行`Ctrl+Enter`*   在当前行上方插入一行`Ctrl+Shift+Enter`
 
-### 光标相关
+# 6. 光标相关
 
 *   移动到行首：`Home`
 *   移动到行尾：`End`
@@ -67,7 +65,7 @@ categories: 开发工具
 *   同时选中所有匹配的`Ctrl+Shift+L`
 *   `Ctrl+D`下一个匹配的也被选中(被我自定义成删除当前行了，见下边`Ctrl+Shift+K`)*   回退上一个光标操作`Ctrl+U`
 
-### 重构代码
+# 7. 重构代码
 
 *   跳转到定义处：`F12`
 *   定义处缩略图：只看一眼而不跳转过去`Alt+F12`
@@ -77,7 +75,7 @@ categories: 开发工具
 *   跳转到下一个Error或Warning：当有多个错误时可以按`F8`逐个跳转
 *   查看diff 在explorer里选择文件右键 `Set file to compare`，然后需要对比的文件上右键选择`Compare with 'file_name_you_chose'`.
 
-### 查找替换
+# 8. 查找替换
 
 *   查找 `Ctrl+F`
 *   查找替换 `Ctrl+H`
@@ -90,7 +88,7 @@ categories: 开发工具
 *   `[]`声明要匹配的字符范围（例如`example.[0-9]`来匹配`example.0`，`example.1`，...
 
 
-## 显示相关
+# 9. 显示相关
 
 *   全屏：`F11`
 *   zoomIn/zoomOut：  ` Ctrl + =  ` /  ` Ctrl + -  ` 
@@ -104,7 +102,7 @@ categories: 开发工具
 *   Show Output`Ctrl+Shift+U`
 *   预览markdown`Ctrl+Shift+V`
 
-## 集成终端
+# 10. 集成终端
 
 - `Ctrl + `	打开集成终端
 - `Ctrl + Shift + `	创建一个新的终端
@@ -113,17 +111,17 @@ categories: 开发工具
 - `Shift + PgUp / PgDown`	页面上下翻屏
 - `Ctrl + Home / End`	滚动到页面头部或尾部
 
-## 其他
+# 11. 其他
 
 *   自动保存：File -&gt; AutoSave ，或者`Ctrl+Shift+P`，输入 auto
 
-# 皮肤预览
+# 12. 皮肤预览
 
 `f1`后输入 `theme` 回车，然后上下键即可预览
 
-# 自定义settings.json
+# 13. 自定义settings.json
 
-## `User settings` 是全局设置，任何vs Code打开的项目都会依此配置。
+`User settings` 是全局设置，任何vs Code打开的项目都会依此配置。
 
  默认存储在:
  
@@ -131,7 +129,7 @@ Windows: `%APPDATA%\Code\User\settings.json`
 Mac: `$HOME/Library/Application Support/Code/User/settings.json`
 Linux: `$HOME/.config/Code/User/settings.json`
 
-## `Workspace settings` 是本工作区的设置，会覆盖上边的配置
+ `Workspace settings` 是本工作区的设置，会覆盖上边的配置
 
 存储在工作区的`.vocode`文件夹下。
 
@@ -156,7 +154,7 @@ Linux: `$HOME/.config/Code/User/settings.json`
 > *   PHP Configuration - PHP linter configuration
 
 
-## 修改默认快捷键
+# 14. 修改默认快捷键
 
 File -&gt; Preferences -&gt; Keyboard Shortcuts
 
