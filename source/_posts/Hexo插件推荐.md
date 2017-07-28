@@ -176,12 +176,35 @@ Hexo提供了一种更方便管理Asset的设定：post_asset_folder
 本地图片测试.md
 ```
 
-插入图片：其中[]里面不写文字则没有图片标题。记住仅仅使用文件名就可以，不用带路径。
+利用makdown插入图片：其中[]里面不写文字则没有图片标题。记住仅仅使用文件名就可以，不用带路径。
 
 
 ```
 ![](logo.jpg)
 ```
+
+利用标签引用：
+[资源文件夹](https://hexo.io/zh-cn/docs/asset-folders.html)
+
+```
+ {% asset_path slug %}
+ {% asset_img slug [title] %}
+ {% asset_link slug [title] %}
+```
+
+注意:
+通过常规的 markdown 语法和相对路径来引用图片和其它资源可能会导致它们在**存档页或者主页**上显示不正确。
+
+比如说：当你打开文章资源文件夹功能后，你把一个 `example.jpg`图片放在了你的资源文件夹中，
+如果通过使用相对路径的常规 markdown 语法 `[](/example.jpg)`，它将 不会出现在首页上。（但是它会在文章中按你期待的方式工作）
+
+正确的引用图片方式是使用下列的标签插件而不是markdown
+
+```
+{% asset_img example.jpg This is an example image %}
+```
+通过这种方式，图片将会同时出现在文章和主页以及归档页中。
+
 
 最终网站的结构为
 
