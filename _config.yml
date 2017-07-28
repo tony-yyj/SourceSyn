@@ -58,7 +58,7 @@ filename_case: 0
 # 是否渲染_drafts目录下的文章，默认为false
 render_drafts: false
 # 是否启用Asset Folder，默认为false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 # 是否显示未来日期文章，默认为true
 future: true
@@ -119,11 +119,11 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
-baidu_url_submit:
-    count: 3 ## 比如3，代表提交最新的三个链接
-    host: www.mashangxue123.com ## 在百度站长平台中注册的域名
-    token: TQVONCgS1qc1IF5A ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
-    path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+#baidu_url_submit:
+#    count: 3 ## 比如3，代表提交最新的三个链接
+#    host: www.mashangxue123.com ## 在百度站长平台中注册的域名
+#    token: TQVONCgS1qc1IF5A ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+#    path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
 
 search:
   path: search.xml

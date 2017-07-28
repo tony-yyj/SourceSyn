@@ -1,0 +1,205 @@
+---
+title: Hexo插件推荐
+abbrlink: 1310093754
+date: 2017-07-28 10:52:17
+tags:
+categories:
+---
+
+<!-- more -->
+
+# 1. 插件hexo-generator-sitemap：生成网站地图
+
+## 1.1. 安装插件命令
+
+```
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+``` 
+
+## 1.2. 字段配置
+
+在你的站点配置文件中修改 URL 为你的站点地址，
+然后在站点配置文件中按如下方式新增字段
+```yml
+# 自动生成sitemap
+sitemap:
+  path: sitemap.xml
+
+baidusitemap:
+  path: baidusitemap.xml
+```
+当你在 hexo g 时,会在public文件夹中生成sitemap.xml 和baidusitemap.xml 两个文件。前者适合提交给谷歌搜素引擎，后者适合提交百度搜索引擎
+
+
+# 2. 插件hexo-baidu-url-submit：向百度提交链接使用主动推送
+
+## 2.1. 安装插件命令
+```
+npm i hexo-baidu-url-submit -S
+
+```
+
+## 2.2. 字段配置
+
+在站点配置文件中按如下方式新增字段
+```yml
+baidu_url_submit:
+  count: 10 # 提交最新的链接数
+  host: crowncj.com # 在百度站长平台中注册的域名,虽然官方推荐要带有 www, 但可以不带.
+  token:  XXXXX # 你的秘钥,每个人都不一样,获取方法在下面
+  path: baidu_urls.txt # 文本文档的地址,新链接会保存在此文本文档里
+```
+加入新的 deploy,多个 type 的写法,前面那个 type 是推送到 Gitub 与 Coding
+```yml
+deploy:
+ - type: git
+   repo:
+        github:
+        coding:
+ - type: baidu_url_submitter
+```
+
+最后当你执行hexo d时新的连接就会被推送上去.
+
+# 3. 插件hexo-deployer-git：动部署到GitHub
+
+## 3.1. 安装插件命令
+
+```yml
+npm install hexo-deployer-git --save 
+```
+
+## 3.2. 修改站点配置
+
+文件_config.yml找到以下内容配置
+
+```yml
+# Deployment
+## Docs: http://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: https://github.com/mashangxue/mashangxue.github.io.git
+  branch: master
+```
+
+### 3.2.1. 运行hexo deploy命令
+
+```
+hexo deploy
+```
+# 4. 插件hexo-generator-searchdb：使用Local Search本地搜索
+
+## 4.1. 安装插件命令
+
+  `npm install hexo-generator-searchdb --save`
+
+## 4.2. 编辑 `站点配置`文件
+
+新增以下内容到任意位置：
+
+```
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+```
+
+## 4.3. 编辑 `主题配置`文件
+
+启用本地搜索功能：
+
+```
+# Local search
+local_search:
+  enable: true
+```
+
+# 5. 插件hexo-abbrlink：文章链接唯一化
+
+## 5.1. 安装插件命令
+
+对标题+时间进行md5然后再转base64，保存在front-matter中。
+
+```
+npm install hexo-abbrlink --save
+```
+安装后，不要在 hexo s 模式下更改文章文件名，否则文章将成空白。
+
+## 5.2. 在站点配置文件中 permalink
+
+查找代码 `permalink:`，将其更改为:
+
+```
+permalink: posts/:abbrlink/  # “posts/” 可自行更换
+```
+
+## 5.3. 在站点配置文件中添加abbrlink
+
+添加如下代码：
+
+```yml
+# abbrlink config
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32 
+  rep: dec    # 进制：dec(default) and hex
+```
+
+# 6. 插件hexo-asset-image：使用本地图片
+
+这个插件在使用本地图片的时候很是方便，图片只需要放在文章同名文件夹中即可，然后文章的引用路径就是简单的文章名（就是图片的文件夹名）/图片名。
+
+## 6.1. 安装插件命令
+
+```
+npm install hexo-asset-image --save
+或者
+npm install https://github.com/CodeFalling/hexo-asset-image --save
+```
+
+## 6.2. 设定post_asset_folder为true
+
+确认根目录站点配置文件 `_config.yml`中有`post_asset_folder: true`。
+
+Hexo提供了一种更方便管理Asset的设定：post_asset_folder
+当您设置post_asset_folder为true参数后，在建立文件时，Hexo会自动建立一个与文章同名的文件夹；以前的文章也可以自己手动创建同名文件夹。
+
+## 6.3. 使用过程
+
+完成安装后用hexo新建文章的时候会发现_posts目录下面会多出一个和文章名字一样的文件夹，图片就可以放在文件夹下面。
+新建文章结构如下：
+
+```
+本地图片测试
+├── logo.jpg
+本地图片测试.md
+```
+
+插入图片：其中[]里面不写文字则没有图片标题。记住仅仅使用文件名就可以，不用带路径。
+
+
+```
+![](logo.jpg)
+```
+
+最终网站的结构为
+
+```
+public/2017/07/9/本地图片测试
+                ├── index.html
+                ├── logo.jpg
+```
+
+同时，生成的 html 是
+
+```html
+<img src="/2017/07/9/本地图片测试/logo.jpg" alt="logo">
+```
+
+# 参考文献：
+
+[hexo博客图片问题](http://www.jianshu.com/p/950f8f13a36c)
+
+[Hexo 博客从搭建部署到SEO优化等详细教程](http://www.jianshu.com/p/efaf72aab32e)
+[ Hexo七牛图床使用 - Roylee Blog From A iOS Developer ](http://error408.com/2016/08/02/Hexo%E4%B8%83%E7%89%9B%E5%9B%BE%E5%BA%8A%E4%BD%BF%E7%94%A8/)
