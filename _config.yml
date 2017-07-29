@@ -185,6 +185,6 @@ deploy:
   - type: git
     repo: 
       github: https://github.com/mashangxue/mashangxue.github.io.git
-      coding: https://git.coding.net/mashangxue/mashangxue.git
+      coding: https://git.coding.net/mashangxue/mashangxue.coding.me.git
     branch: master
   #- type: baidu_url_submitter
