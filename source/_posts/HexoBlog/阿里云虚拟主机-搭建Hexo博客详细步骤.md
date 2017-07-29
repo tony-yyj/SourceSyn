@@ -7,16 +7,23 @@ tags:
     - Hexo优化
 categories: Hexo搭建博客
 ---
+<!-- TOC -->
 
+- [1. 注册域名 申请服务器](#1-注册域名-申请服务器)
+- [2. 云虚拟主机使用](#2-云虚拟主机使用)
+- [3. 网站上传至HTDOCS](#3-网站上传至htdocs)
+- [4. 参考文献：](#4-参考文献)
+
+<!-- /TOC -->
 <!-- more -->
 
-# 注册域名 申请服务器
+# 1. 注册域名 申请服务器
 
 上阿里云 万网注册个域名 https://wanwang.aliyun.com/
 
 选一个普惠版云虚拟主机 https://wanwang.aliyun.com/hosting/free/?spm=5176.8060947.436638.1.irgZGN
 
-# 云虚拟主机使用
+# 2. 云虚拟主机使用
 
 [云虚拟主机使用手册](https://help.aliyun.com/knowledge_detail/36183.html)
 
@@ -27,7 +34,7 @@ categories: Hexo搭建博客
 - 第四步	域名解析、 网站域名绑定
 - 第五步	网站创建成功
 
-# 网站上传至HTDOCS
+# 3. 网站上传至HTDOCS
 
 您的首页文件及网站程序需上传至FTP下的HTDOCS目录下，也就是把Hexo生成的Public文件夹里面的文件上传到htdocs目录
 您自行设定的首页文件名，需要添加至控制面板默认首页设置的列表中操作帮助
@@ -39,7 +46,7 @@ categories: Hexo搭建博客
 
  虚拟主机不支持远程登录，包括SSH方式，远程桌面RDP方式等。如果您需要远程桌面权限管理，建议您可以 购买服务器 ECS 。
 
-# 参考文献：
+# 4. 参考文献：
 
 [++阿里云虚拟主机+Hexo 零基础搭建个人博客--简单易学 - Royce_he的个人页面](https://my.oschina.net/roycehe/blog/807259)
 

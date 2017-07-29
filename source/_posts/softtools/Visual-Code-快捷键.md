@@ -7,7 +7,7 @@ categories: 开发工具
 abbrlink: 736053491
 date: 2017-07-28 17:35:10
 ---
-
+Visual Code 快捷键介绍：窗口、编辑器、格式调整、  重构代码、 集成终端等快捷键
 <!-- more -->
 # 1. 主命令框 Command Palette
 

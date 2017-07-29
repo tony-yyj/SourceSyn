@@ -6,7 +6,7 @@ tags:
     - Hexo
 categories: Hexo搭建博客
 ---
-# 默认目录结构介绍：
+Hexo目录中每个文件用途介绍
 <!-- more -->
 ```
 ├── .deploy
