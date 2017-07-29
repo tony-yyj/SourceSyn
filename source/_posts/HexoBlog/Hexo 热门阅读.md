@@ -19,7 +19,7 @@ categories: Hexo搭建博客
   var query = new AV.Query('Counter');//表名
   query.notEqualTo('id',0); //id不为0的结果
   query.descending('time'); //结果按阅读次数降序排序
-  query.limit(20);  //最终只返回10条结果
+  query.limit(3);  //最终只返回10条结果
   query.find().then(function (todo) {
     for (var i=0;i<10;i++){ 
       var result=todo[i].attributes;
