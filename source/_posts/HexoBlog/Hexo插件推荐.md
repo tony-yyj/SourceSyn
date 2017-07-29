@@ -2,8 +2,10 @@
 title: Hexo插件推荐
 abbrlink: 1310093754
 date: 2017-07-28 10:52:17
-tags:
-categories:
+tags: 
+    - Hexo
+    - Hexo优化
+categories: Hexo搭建博客
 ---
 <!-- TOC -->
 

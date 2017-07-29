@@ -2,8 +2,10 @@
 title: Hexo七牛图床使用
 abbrlink: 3030296820
 date: 2017-07-28 10:51:05
-tags:
-categories:
+tags: 
+    - Hexo
+    - Hexo优化
+categories: Hexo搭建博客
 ---
 <!-- TOC -->
 

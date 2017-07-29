@@ -180,8 +180,11 @@ theme: hexo-theme-next
 
 # Deployment 部署配置，将本地public目录也就是网站部署到服务器上的配置
 ## Docs: https://hexo.io/docs/deployment.html
+# http://mashangxue.coding.me/mashangxue/
 deploy:
   - type: git
-    repo: https://github.com/mashangxue/mashangxue.github.io.git
+    repo: 
+      github: https://github.com/mashangxue/mashangxue.github.io.git
+      coding: https://git.coding.net/mashangxue/mashangxue.git
     branch: master
   #- type: baidu_url_submitter
