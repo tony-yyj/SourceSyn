@@ -175,7 +175,7 @@ algolia:
   chunkSize: 5000
 
 ## Themes: https://hexo.io/themes/主题配置
-# maupassant  next yilia jacman
+# maupassant  next yilia jacman themes/maupassant
 theme: hexo-theme-next
 
 # Deployment 部署配置，将本地public目录也就是网站部署到服务器上的配置

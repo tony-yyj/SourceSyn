@@ -57,8 +57,21 @@ recent_posts: true
 - /uploads/mashangxue123.jpg 需要将你的头像图片放置在 站点的 source/uploads/（可能需要新建uploads目录）
 - `avatar: /images/mashangxue123.jpg` 需要将你的头像图片放置在 主题的 source/images/ 目录下。
 
+# 3. 设置网站的图标Favicon
 
-# 3. 首页文章以摘要形式显示
+具体方法实现
+
+在[EasyIcon http://www.easyicon.net/](http://www.easyicon.net/)中找一张（32*32）的ico图标,或者去别的网站下载或者制作；
+
+将图标名称改为`favicon.ico`，然后把图标放在`/themes/next/source/images` 里，并且修改主题配置文件：
+
+```yml
+# Put your favicon.ico into `hexo-site/source/` directory.
+favicon: /favicon.ico
+
+```
+
+# 4. 首页文章以摘要形式显示
 
 方法1：打开主题配置文件，找到如下位置，修改
 
@@ -78,13 +91,13 @@ auto_excerpt:
 方法3：
 在文章的 front-matter 中添加 `description`，并提供文章摘录
 
-# 4. 设置代码高亮主题
+# 5. 设置代码高亮主题
 
 NexT 使用 Tomorrow Theme 作为代码高亮，共有5款主题供你选择。 NexT 默认使用的是 白色的 normal 主题，可选的值有 `normal，night， night blue， night bright， night eighties`：
 
 更改 highlight_theme 字段，将其值设定成你所喜爱的高亮主题，例如： `highlight_theme: normal`
 
-# 5. 添加文章末尾版权声明
+# 6. 添加文章末尾版权声明
 
 打开下面的配置即可：
 
@@ -128,7 +141,7 @@ post_copyright:
 }
 ```
 
-# 6. 不蒜子访问统计
+# 7. 不蒜子访问统计
 
 搜索关键字busuanzi_count，设置enable: true时，代表开启全局开关。若site_uv、site_pv、page_pv的值均为false时，不蒜子仅作记录而不会在页面上显示。
 配置示例如下
@@ -152,7 +165,7 @@ busuanzi_count:
 
 ```
 
-# 7. 增加字数统计插件WordCount
+# 8. 增加字数统计插件WordCount
 
 首先在Hexo项目目录下安装：`npm install hexo-wordcount --save`。
 
@@ -166,7 +179,7 @@ busuanzi_count:
 
 ```
 
-# 8. 目录默认全展开
+# 9. 目录默认全展开
 
 在 `~/themes/next/source/css/_custom/custom.styl` 中添加以下代码：
 
@@ -174,7 +187,7 @@ busuanzi_count:
 .post-toc .nav .nav-child { display: block; }
 ```
 
-# 9. 去掉Hexo博客底部页脚
+# 10. 去掉Hexo博客底部页脚
 
 只需要配置一下就可以：
 
@@ -185,12 +198,12 @@ copyright: false
 
 相关的代码在footer.swig中的带有powered-by 的div标签
 
-# 10. 百度统计
+# 11. 百度统计
 
 登录 `百度统计`，定位到站点的代码获取页面
 复制 hm.js? 后面那串统计脚本 id
 
-# 11. 侧边栏推荐阅读
+# 12. 侧边栏推荐阅读
 
 打开主题配置文件修改(links里面写你想要的推荐链接):
 
@@ -204,7 +217,7 @@ links:
 
 ```
 
-# 12. 在右上角或者左上角实现fork me on github
+# 13. 在右上角或者左上角实现fork me on github
 
 点击[https://github.com/blog/273-github-ribbons](https://github.com/blog/273-github-ribbons) 挑选自己喜欢的样式，并复制代码。
 例如我的代码是：
@@ -214,7 +227,7 @@ links:
 然后粘贴刚才复制的代码到 `themes/next/layout/_layout.swig`文件中(放在<div class="headband"></div>的下面)，
 并把href改为你的github地址.
 
-# 13. 添加 LiveRe 评论支持
+# 14. 添加 LiveRe 评论支持
 
 进入 https://livere.com/，注册账号, 生成代码，data-uid 即为所需 uid
 
@@ -222,7 +235,7 @@ links:
 
 [hexo从多说评论转为韩国来必力评论](https://zengmianhui.github.io/2017/05/02/hexo%E4%BB%8E%E5%A4%9A%E8%AF%B4%E8%AF%84%E8%AE%BA%E8%BD%AC%E4%B8%BA%E9%9F%A9%E5%9B%BD%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA/)
 
-# 14. 集成百度分享
+# 15. 集成百度分享
 
 编辑 站点配置文件中
 
@@ -232,7 +245,7 @@ baidushare:
 
 ```
 
-# 15. 关键词keywords
+# 16. 关键词keywords
 
 默认next主题的文章关键字取文章的标签，所以如果想要设置很全的关键字，肯定会造成自己的标签页的标签过多，看着过于杂乱.
 
@@ -253,7 +266,7 @@ baidushare:
 ```
 
 
-# 16. 参考文献：
+# 17. 参考文献：
 
 [++主题配置 - NexT 使用文档](http://theme-next.iissnan.com/theme-settings.html#site-since)
 
