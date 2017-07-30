@@ -6,7 +6,7 @@
 # 站点名字，也就是html的title，会显示在浏览器标签上。
 title: 马上学123
 # 站点副标题，会显示在首页上，可以不填。
-subtitle: 一切就是这么简单
+subtitle: 很简单
 description: 马上学123，深度学习，人工智能，Tensorflow，Python，Android
 # 站点描述，可以不填。
 author: Markmin
