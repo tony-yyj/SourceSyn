@@ -1,13 +1,24 @@
 ---
 title: 使用markdown制作的html幻灯片(2) VS code插件
+tags:
+  - markdown
+  - 网页幻灯片
+  - VS Code插件
+categories:
+  - markdown
+  - VS Code
+abbrlink: 883268695
 date: 2017-07-31 21:15:45
-tags: 
-    - markdown
-    - html幻灯片
-    - VS Code插件
-categories: [markdown, VS Code]
 ---
 推荐使用 `reveal.js`
+<!-- TOC -->
+
+- [1. 介绍](#1-介绍)
+- [2. markdown 语法](#2-markdown-语法)
+- [3. 使用](#3-使用)
+- [4. 插件设置](#4-插件设置)
+
+<!-- /TOC -->
 <!-- more -->
 
 # 1. 介绍

@@ -1,11 +1,22 @@
 ---
-title: 使用markdown制作的html幻灯片(1) reveal.js
-date: 2017-07-31 20:15:45
-tags: 
-    - markdown
+title: 使用markdown制作html网页幻灯片(1) reveal.js
+tags:
+  - markdown 网页幻灯片
 categories: markdown
----
-推荐使用 `reveal.js`
+abbrlink: 2038867150
+date: 2017-07-31 20:15:45
+<!-- TOC -->
+
+- [1. reveal.js 介绍](#1-revealjs-介绍)
+- [2. 使用步骤](#2-使用步骤)
+- [3. Markdown 语法](#3-markdown-语法)
+    - [3.1. data-markdown 属性](#31-data-markdown-属性)
+    - [3.2. 分页实现](#32-分页实现)
+    - [3.3. 外置 Markdown 文件(要求Node.js)](#33-外置-markdown-文件要求nodejs)
+- [4. 从本地 Web 服务器上运行reveal.js](#4-从本地-web-服务器上运行revealjs)
+
+<!-- /TOC -->
+
 <!-- more -->
 
 # 1. reveal.js 介绍
