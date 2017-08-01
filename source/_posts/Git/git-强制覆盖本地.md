@@ -1,8 +1,10 @@
 ---
 title: git 强制覆盖本地
-date: 2017-07-29 23:12:25
 tags: git
 categories: git
+abbrlink: 3976604155
+abbrlinkurl: 'http://www.mashangxue123.com/3976604155'
+date: 2017-07-29 23:12:25
 ---
 命令：
 ```bash
