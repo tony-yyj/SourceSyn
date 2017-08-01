@@ -31,7 +31,11 @@ categories: Hexo搭建博客
     - [6.1. 安装插件命令](#61-安装插件命令)
     - [6.2. 设定post_asset_folder为true](#62-设定post_asset_folder为true)
     - [6.3. 使用过程](#63-使用过程)
-- [参考文献](#参考文献)
+- [7. 添加TOC 目录](#7-添加toc-目录)
+    - [7.1. 安装插件命令](#71-安装插件命令)
+    - [7.2. 在站点配置文件中添加toc](#72-在站点配置文件中添加toc)
+    - [7.3. 使用方法`<!-- toc -->`](#73-使用方法---toc---)
+- [8. 参考文献](#8-参考文献)
 
 <!-- /TOC -->
 <!-- more -->
@@ -248,7 +252,35 @@ public/2017/07/9/本地图片测试
 <img src="/2017/07/9/本地图片测试/logo.jpg" alt="logo">
 ```
 
-# 参考文献 
+# 7. 添加TOC 目录
+
+## 7.1. 安装插件命令
+```
+npm install hexo-toc --save
+
+```
+
+## 7.2. 在站点配置文件中添加toc
+
+```yml
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor
+```
+
+## 7.3. 使用方法`<!-- toc -->`
+
+使用的时候，只需要添加 
+```
+<!-- toc -->
+```
+
+# 8. 参考文献 
 
 [hexo博客图片问题](http://www.jianshu.com/p/950f8f13a36c)
 

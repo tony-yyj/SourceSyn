@@ -5,18 +5,8 @@ tags:
 categories: markdown
 abbrlink: 2038867150
 date: 2017-07-31 20:15:45
-<!-- TOC -->
-
-- [1. reveal.js 介绍](#1-revealjs-介绍)
-- [2. 使用步骤](#2-使用步骤)
-- [3. Markdown 语法](#3-markdown-语法)
-    - [3.1. data-markdown 属性](#31-data-markdown-属性)
-    - [3.2. 分页实现](#32-分页实现)
-    - [3.3. 外置 Markdown 文件(要求Node.js)](#33-外置-markdown-文件要求nodejs)
-- [4. 从本地 Web 服务器上运行reveal.js](#4-从本地-web-服务器上运行revealjs)
-
-<!-- /TOC -->
-
+---
+<!-- toc -->
 <!-- more -->
 
 # 1. reveal.js 介绍
@@ -58,7 +48,7 @@ reveal.js 配备了广泛的功能，包括嵌套幻灯片，Markdown 内容，P
 
 For Example:
 
-```js
+```html
 <section  data-markdown data-separator="---" data-separator-vertical="--"  >
   <script type="text/template">
     # 主题1
@@ -82,7 +72,7 @@ For Example:
 reveal.js 可以引用一个外置的 Markdown 文件来解析。
 
 For Example:
-```
+```html
 <section data-markdown="example.md"
          data-separator="^\n\n\n"
          data-separator-vertical="^\n\n"
@@ -114,6 +104,92 @@ data-charset 属性是可选的，它指定加载外部文件时使用的字符�
 
 - 打开 <http://localhost:8000> 来观看你的演示文稿
 
+# 5. markdown 更多示例
+
+```html
+
+<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+<section data-markdown="example.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+
+<!-- Slides are separated by three dashes (quick 'n dirty regular expression) -->
+<section data-markdown data-separator="---">
+    <script type="text/template">
+        ## Demo 1
+        Slide 1
+        ---
+        ## Demo 1
+        Slide 2
+        ---
+        ## Demo 1
+        Slide 3
+    </script>
+</section>
+
+<!-- Slides are separated by newline + three dashes + newline, vertical slides identical but two dashes -->
+<section data-markdown data-separator="^\n---\n$" data-separator-vertical="^\n--\n$">
+    <script type="text/template">
+        ## Demo 2
+        Slide 1.1
+
+        --
+
+        ## Demo 2
+        Slide 1.2
+
+        ---
+
+        ## Demo 2
+        Slide 2
+    </script>
+</section>
+
+<!-- No "extra" slides, since there are no separators defined (so they'll become horizontal rulers) -->
+<section data-markdown>
+    <script type="text/template">
+        A
+
+        ---
+
+        B
+
+        ---
+
+        C
+    </script>
+</section>
+
+<!-- Slide attributes -->
+<section data-markdown>
+    <script type="text/template">
+        <!-- .slide: data-background="#000000" -->
+        ## Slide attributes
+    </script>
+</section>
+
+<!-- Element attributes -->
+<section data-markdown>
+    <script type="text/template">
+        ## Element attributes
+        - Item 1 <!-- .element: class="fragment" data-fragment-index="2" -->
+        - Item 2 <!-- .element: class="fragment" data-fragment-index="1" -->
+    </script>
+</section>
+
+<!-- Code -->
+<section data-markdown>
+    <script type="text/template">
+        ```php
+        public function foo()
+        {
+            $foo = array(
+                'bar' => 'bar'
+            )
+        }
+        ```
+    </script>
+</section>
+
+```
 
 参考文献：
 

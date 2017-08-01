@@ -103,7 +103,15 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 Plugins:
 - hexo-generator-sitemap
+- hexo-generator-baidu-sitemap
 #- hexo-generator-feed
+# - hexo-baidu-url-submit
+# - hexo-deployer-git 
+# - hexo-generator-searchdb
+# - hexo-abbrlink 
+# - hexo-asset-image
+# - hexo-toc
+
 
 # Feed Atom
 #feed:
@@ -174,6 +182,15 @@ algolia:
   indexName: 'mashangxue'
   chunkSize: 5000
 
+toc:
+  maxdepth: 3
+  class: toc
+  slugify: transliteration
+  anchor:
+    position: after
+    symbol: '#'
+    style: header-anchor
+    
 ## Themes: https://hexo.io/themes/主题配置
 # maupassant  next yilia jacman themes/maupassant
 theme: hexo-theme-next
