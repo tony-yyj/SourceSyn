@@ -7,6 +7,7 @@ categories: Hexo
 toc: true
 abbrlink: 3011403515
 date: 2017-07-20 19:25:09
+alias: 3011403515/
 ---
 主要是 Local Search，Algolia 最新版本一直配置失败， Swiftype需要企业邮箱
 <!-- more -->

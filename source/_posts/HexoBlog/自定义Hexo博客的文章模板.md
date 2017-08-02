@@ -6,6 +6,7 @@ tags:
     - Hexo
     - Hexo优化
 categories: Hexo
+alias: 353523292/
 ---
 每篇文章源代码的开头部分自定义，博客模版
 <!-- more -->

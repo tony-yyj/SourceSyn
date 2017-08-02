@@ -6,6 +6,7 @@ tags:
     - Hexo
     - Hexo优化
 categories: Hexo
+alias: 3611120980/
 ---
 多台电脑同步博客源码，首先要把最新的源码上传到git上，然后在其它电脑上搭建Hexo环境后同步博客源码。 前提是两台电脑都能连上git，主要是都配置了 `git ssh`密钥连接
 <!-- more -->

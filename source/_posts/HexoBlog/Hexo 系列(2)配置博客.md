@@ -8,6 +8,7 @@ categories: Hexo
 toc: true
 abbrlink: 2475404191
 date: 2017-07-20 19:15:06
+alias: 2475404191/
 ---
 Hexo 博客网站的基本配置，主要是菜单栏的配置，添加标签和分类
 <!-- more -->

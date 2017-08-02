@@ -8,6 +8,7 @@ categories:
 toc: true
 abbrlink: 3473012492
 date: 2017-07-23 18:15:11
+alias: 3473012492/
 ---
 淘宝 NPM 镜像配置，基本命令使用
 <!-- more -->

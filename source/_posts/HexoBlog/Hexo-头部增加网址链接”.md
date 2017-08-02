@@ -7,6 +7,7 @@ categories: Hexo
 abbrlink: 3610585402
 abbrlinkurl: 'http://www.mashangxue123.com/3610585402'
 date: 2017-08-01 11:57:13
+alias: 3610585402/
 ---
 
 <!-- toc -->

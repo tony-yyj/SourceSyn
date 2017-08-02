@@ -6,6 +6,7 @@ tags:
     - Hexo
     - Hexo优化
 categories: Hexo
+alias: 982564298/
 ---
 博客根目录下_config.yml站点配置文件。
 <!-- more -->

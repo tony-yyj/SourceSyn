@@ -6,6 +6,7 @@ tags:
     - Hexo
     - Hexo优化
 categories: Hexo
+alias: 3030296820/
 ---
 <!-- TOC -->
 

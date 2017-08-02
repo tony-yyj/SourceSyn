@@ -6,6 +6,7 @@ tags:
 categories: Hexo
 abbrlink: 3503968978
 date: 2017-07-29 17:54:31
+alias: 3503968978/
 ---
 Hexo博客 Coding部署
 <!-- TOC -->

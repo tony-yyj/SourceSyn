@@ -6,6 +6,7 @@ tags:
 categories: Hexo
 abbrlink: 404368343
 date: 2017-07-20 19:15:04
+alias: 404368343/
 ---
 本文介绍Hexo搭建博客的基本步骤，包括需要按照的软件，网站目录，部署到github。
 <!-- more -->

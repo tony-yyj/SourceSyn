@@ -5,6 +5,7 @@ date: 2017-07-25 16:37:57
 tags: 
     - Hexo
 categories: Hexo
+alias: 2286160507/
 ---
 Hexo目录中每个文件用途介绍
 <!-- more -->
