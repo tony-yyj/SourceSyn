@@ -2,7 +2,7 @@
 title: “Hexo 系列(6) 报错总结”
 tags: 
     - Hexo
-categories: Hexo搭建博客
+categories: Hexo
 toc: true
 abbrlink: 1607465674
 date: 2017-07-22 19:15:10

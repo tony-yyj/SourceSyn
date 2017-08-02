@@ -4,7 +4,7 @@ abbrlink: 2286160507
 date: 2017-07-25 16:37:57
 tags: 
     - Hexo
-categories: Hexo搭建博客
+categories: Hexo
 ---
 Hexo目录中每个文件用途介绍
 <!-- more -->

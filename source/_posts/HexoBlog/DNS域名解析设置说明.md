@@ -3,7 +3,7 @@ title: DNS域名解析设置说明
 tags:
   - DNS
   - Hexo优化
-categories: Hexo搭建博客
+categories: Hexo
 abbrlink: 17332502
 date: 2017-07-29 18:48:50
 ---

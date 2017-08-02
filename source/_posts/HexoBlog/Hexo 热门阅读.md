@@ -5,7 +5,7 @@ date: 2017-07-26 21:30:09
 tags: 
     - Hexo
     - Next主题
-categories: Hexo搭建博客
+categories: Hexo
 ---
 热门阅读
 <!-- more -->

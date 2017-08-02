@@ -5,7 +5,7 @@ date: 2017-07-25 16:12:16
 tags: 
     - Hexo
     - Hexo优化
-categories: Hexo搭建博客
+categories: Hexo
 ---
 每篇文章源代码的开头部分自定义，博客模版
 <!-- more -->

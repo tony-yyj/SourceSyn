@@ -4,7 +4,7 @@ tags:
     - Hexo优化
     - Hexo
     - Next主题
-categories: Hexo搭建博客
+categories: Hexo
 toc: true
 abbrlink: 2475404191
 date: 2017-07-20 19:15:06

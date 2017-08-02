@@ -3,7 +3,7 @@ title: “Hexo 系列(7) 百度优化”
 tags: 
     - Hexo
     - Hexo优化
-categories: Hexo搭建博客
+categories: Hexo
 toc: true
 abbrlink: 1672863730
 date: 2017-07-22 20:15:10

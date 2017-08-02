@@ -3,7 +3,7 @@ title: “Hexo 系列(5) 站内搜索”
 tags: 
     - Hexo优化
     - Next主题
-categories: Hexo搭建博客
+categories: Hexo
 toc: true
 abbrlink: 3011403515
 date: 2017-07-20 19:25:09

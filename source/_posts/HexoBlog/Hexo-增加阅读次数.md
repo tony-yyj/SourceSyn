@@ -6,7 +6,7 @@ tags:
     - Hexo
     - Hexo优化
     - Next主题
-categories: Hexo搭建博客
+categories: Hexo
 ---
 
 <!-- more -->

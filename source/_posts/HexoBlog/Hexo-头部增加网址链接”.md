@@ -3,7 +3,7 @@ title: Hexo 头部增加网址链接”
 tags: 
     - Hexo
     - Next主题
-categories: Hexo搭建博客
+categories: Hexo
 abbrlink: 3610585402
 abbrlinkurl: 'http://www.mashangxue123.com/3610585402'
 date: 2017-08-01 11:57:13

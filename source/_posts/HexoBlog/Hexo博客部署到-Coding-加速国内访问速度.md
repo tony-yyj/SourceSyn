@@ -3,7 +3,7 @@ title: Hexo博客部署到 Coding 加速国内访问速度
 tags:
   - Hexo
   - Hexo优化
-categories: Hexo搭建博客
+categories: Hexo
 abbrlink: 3503968978
 date: 2017-07-29 17:54:31
 ---

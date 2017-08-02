@@ -5,7 +5,7 @@ date: 2017-07-27 11:36:38
 tags: 
     - Hexo
     - Hexo优化
-categories: Hexo搭建博客
+categories: Hexo
 ---
 <!-- TOC -->
 
