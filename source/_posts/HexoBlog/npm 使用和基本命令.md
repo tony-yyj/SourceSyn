@@ -4,7 +4,6 @@ tags:
     - npm
     - Hexo
 categories: 
-    - Hexo搭建博客
     - 前端
 toc: true
 abbrlink: 3473012492

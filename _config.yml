@@ -24,8 +24,8 @@ url: http://www.mashangxue123.com/
 # 站点根目录
 root: /
 # 文章的永久网址链接，默认是:year/:month/:day/:title/，。 文章链接优化:title/
-permalink: :abbrlink/
-permalink_defaults:
+permalink: :category/:abbrlink.html
+permalink_defaults: 
 # abbrlink config  https://github.com/Rozbo/hexo-abbrlink
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32 
@@ -47,7 +47,7 @@ skip_render: [baidu_verify_j461ONwJ3o.html, google39383651a5a98b1e.html]
 # 写作配置
 # Writing
 # 新建文章默认文件名
-new_post_name: :title.md # File name of new posts  :year-:month-:day-
+new_post_name: :year:month:day-:title.md # File name of new posts  :year-:month-:day-
 # 默认布局
 default_layout: post
 titlecase: false # Transform title into titlecase
@@ -58,7 +58,7 @@ filename_case: 0
 # 是否渲染_drafts目录下的文章，默认为false
 render_drafts: false
 # 是否启用Asset Folder，默认为false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 # 是否显示未来日期文章，默认为true
 future: true
@@ -81,7 +81,7 @@ index_generator:
   
 # Category & Tag分类和标签的设置：
 # 默认分类，默认为无分类，当然你可以设置一个默认分类。
-default_category: uncategorized
+default_category: note
 category_map:
 tag_map:
 
@@ -111,6 +111,8 @@ Plugins:
 # - hexo-abbrlink 
 # - hexo-asset-image
 # - hexo-toc
+# - hexo-generator-alias
+# - hexo-autonofollow
 
 
 # Feed Atom
@@ -126,6 +128,10 @@ sitemap:
 
 baidusitemap:
   path: baidusitemap.xml
+
+nofollow:
+	enable: true
+	exclude:
 
 #baidu_url_submit:
 #    count: 3 ## 比如3，代表提交最新的三个链接

@@ -22,10 +22,6 @@ Hexo博客 Coding部署
 
 # 1. 创建项目并设置为Pages服务
 
-![](CodingNew0.png)
-
-![](CodingNew1.png)
-
 # 2. ssh对接对接 方便上传
 
 ## 2.1. 用git bash输入命令
