@@ -152,6 +152,6 @@ Mathjax官方文档， http://docs.mathjax.org/en/latest/start.html
  [Getting Started &mdash; MathJax 2.7 documentation](http://docs.mathjax.org/en/latest/start.html)
 
 
-[Math](https://webdemo.myscript.com/views/math.html#)
+[在线识别手写数学公式的工具 Math](https://webdemo.myscript.com/views/math.html#)
 
 [Hexo-NexT主题使用mathjax输入数学公式注意事项](http://www.befuncool.com/2016/11/20/Hexo-NexT%E4%B8%BB%E9%A2%98%E4%BD%BF%E7%94%A8mathjax%E8%BE%93%E5%85%A5%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/)
