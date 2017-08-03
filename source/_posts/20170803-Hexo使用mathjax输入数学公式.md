@@ -5,6 +5,7 @@ categories: []
 abbrlink: 1521650214
 abbrlinkurl: '原文 http://www.mashangxue123.com/undefined/1521650214'
 date: 2017-08-03 14:56:50
+mathjax: ture
 ---
 
 <!-- toc -->
@@ -13,7 +14,13 @@ date: 2017-08-03 14:56:50
 # 1. NexT如何集成 mathjax
 
 可以在主题的 _config.xml 配置打开即可，因为Next自带了对数学公式的支持，
+
 把 mathjax 使能为true， cdn 设置为 `//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML`
+per_page代表是否不渲染每一页，我们设置为true，表示只有在有mathjax 头标签的时候才渲染公式。（这个可以从源代码mathjax.swig 文件中看出来）
+```
+{% if theme.mathjax.enable %}
+  {% if not theme.mathjax.per_page or (page.total or page.mathjax) %}
+```
 
 # 2. 框架不提供怎么集成mathjax
 
