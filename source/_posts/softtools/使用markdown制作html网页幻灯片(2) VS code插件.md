@@ -6,7 +6,6 @@ tags:
   - VS Code插件
 categories:
   - markdown
-  - VS Code
 abbrlink: 883268695
 date: 2017-07-31 21:15:45
 ---

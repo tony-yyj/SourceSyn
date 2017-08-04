@@ -3,8 +3,7 @@ title: “npm 使用”
 tags: 
     - npm
     - Hexo
-categories: 
-    - 前端
+categories: 前端
 toc: true
 abbrlink: 3473012492
 date: 2017-07-23 18:15:11

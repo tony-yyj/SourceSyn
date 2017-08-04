@@ -1,7 +1,9 @@
 ---
 title: Hexo使用mathjax输入数学公式
-tags: []
-categories: []
+tags: 
+    - Hexo 
+    - mathjax
+categories: Hexo
 abbrlink: 1521650214
 abbrlinkurl: '原文 http://www.mashangxue123.com/undefined/1521650214'
 date: 2017-08-03 14:56:50
