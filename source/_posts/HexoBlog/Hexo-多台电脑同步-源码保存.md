@@ -72,7 +72,7 @@ npm install hexo-deployer-git --save # 部署安装 hexo-deployer-git
 
 ```bash
 git init       #将目录添加到版本控制系统中    
-git remote add origin git remote add origin https://github.com/mashangxue/SourceSyn.git #将本地仓库映射到托管服务器的仓库上    
+git remote add origin https://github.com/mashangxue/SourceSyn.git #将本地仓库映射到托管服务器的仓库上    
 git fetch --all  #将git上所有文件拉取到本地    
 git reset --hard origin/master  #强制将本地内容指向刚刚同步git云端内容,用远端文件覆盖本地相同文件
 ```
