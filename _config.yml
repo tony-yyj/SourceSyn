@@ -42,7 +42,9 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 # 不想被渲染的路径
-skip_render: [baidu_verify_j461ONwJ3o.html, google39383651a5a98b1e.html]
+skip_render: 
+  - baidu_verify_j461ONwJ3o.html
+  - google39383651a5a98b1e.html
 
 # 写作配置
 # Writing
@@ -144,13 +146,6 @@ search:
   field: post
   format: html
   limit: 10000
-
-algolia:
-  applicationID: 'MCHHKPSO65'
-  apiKey: 'df18198c14233a1e70752bf0077fab78'
-  adminApiKey: '5456b7f5a058f986414ee1d44336be8f'
-  indexName: 'mashangxue'
-  chunkSize: 5000
 
 toc:
   maxdepth: 3
