@@ -53,17 +53,23 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 ## 2.2. 新建一个 README.md文件
 
 可以使用touch命令，或者 echo 命令创建并写入内容，或者自己手动创建
+
 ```
 　　touch README.md
+```
 或者
+```
     echo "# mashangxue123.github.io" >> README.md
-```　
+```
 
 
 ## 2.3. 加入到缓存区
+
 ```
-git add README.md　
-```　
+git add README.md
+　
+```
+
 （可以用git add --a将所有改动提交到缓存（注意是两个杠））　
 
 ## 2.4. 提交改变
@@ -95,7 +101,8 @@ git push origin master
 
 ```
 git push -u origin master    
-```　　
+```
+
 上面命令将本地的master分支推送到origin主机，同时指定origin为默认主机，后面就可以不加任何参数使用 `git push`了
 
 ## 3.4. 问题：
@@ -141,18 +148,22 @@ git branch --set-upstream-to=origin/master
 新建一个叫dev的分支，基于master分支
 ```
 　git branch dev master
-```　　
+```
+
 切换到这个分支：
+
 ```
 　　git checkout dev
 ```
+
 　　注意：切换分支的时候可以发现，在Windows中的repository文件夹中的文件内容也会实时相应改变，变成当前分支的内容。
 
 ## 4.2. 创建分支的另一种方法
 
 ```
 git checkout -b dev2 develop
-```　
+```
+
 可以新建一个分支dev2，同时切换到这个分支
 
 将 dev2 分支删除
