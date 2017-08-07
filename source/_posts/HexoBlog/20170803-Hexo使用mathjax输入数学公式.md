@@ -67,6 +67,7 @@ npm install hexo-math --save
 https://github.com/hexojs/hexo-math 
 
 ## 3.2. 配置站点
+下面内容是在站点配置设置，我的设置后出错。 最终只是需要安装就可以正常运行，不需要下面的配置。
 
 ```yml
 math:
