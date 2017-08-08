@@ -147,7 +147,16 @@ $F\_a = F\_b + F\_c + F\_{\mu}$
  {% math %} F_a = F_b + F_c + F_{\mu} {% endmath %}
 ```
 
-参考文献
+# 6. 如何写数学公式
+
+可以直接使用下面的两个网站来手写数学公式，他会自动转换为我们需要的语法。
+[在线 LaTeX 公式编辑器](https://www.codecogs.com/latex/eqneditor.php?lang=zh-cn)
+[在线识别手写数学公式的工具 Math](https://webdemo.myscript.com/views/math.html#)
+
+从这边文章学习基本语法
+[常用数学符号的 LaTeX 表示方法](http://mohu.org/info/symbols/symbols.htm)
+
+# 7. 参考文献
 
 [++ 在 Hexo 中完美使用 Mathjax 输出数学公式](http://lukang.me/2014/mathjax-for-hexo.html)
 
