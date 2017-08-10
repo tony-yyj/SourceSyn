@@ -115,6 +115,7 @@ c_2\begin{bmatrix}2\\0\\-2\\1\\\end{bmatrix}
 
 每一列都有主元，0 个自由变量，此时零空间 $N(A)$只有零向量，因为没有自由变量能够赋值，列的线性组合无法产生 $0$ 列
 Ax=b 的全部解：0 个或一个解，如果有解，即是唯一解特解Xp
+令自由元等于0,带入方程组中求出主元的值，这组解我们叫做特解(particular solution)下边记做：Xp
 
 {% math %}
 A=
@@ -127,6 +128,11 @@ A=
 {% endmath %}
 {% math %}rank(A)=2{% endmath %}，要使{% math %}Ax=b, b \neq 0{% endmath %}有非零解，
 $b$必须取$A$中各列的线性组合，此时A的零空间中只有$0$向量。
+
+例子：
+
+![](4054319428_rn.png)
+
 
 ## 行满秩$r=m$ 各行线性无关情况
 有无穷个解, 特解+零空间
@@ -143,6 +149,10 @@ A=
 
 {% math %}rank(A)=2{% endmath %}，$\forall b \in R^m都有x \neq 0的解$，因为此时$A$的列空间为$R^m$，{% math %}b \in R^m{% endmath %}恒成立，组成$A$的零空间的自由变量有n-r个。
 
+例子：
+
+![](4054319428_rm.png)
+
 ## 行列满秩情况{% math %}r=m=n{% endmath %} 行，列线性无关:
 
 有唯一解, $b$ 是$A$ 列向量的线性组合
@@ -158,9 +168,24 @@ A=
 {% endmath %}
 则$A$最终可以化简为$R=I$，其零空间只包含$0$向量。
 
-{% math %}r<m, r<n{% endmath %} 有 $0$ 解或无穷解,  如果 $b$ 的行和$A$ 的行向量之间有相同的组合关系，那有无穷解，否则有 $0$ 解
+例子
+
+ ![](4054319428_rmn.png)
+
+这种满秩的方阵还有另一个名字就是可逆矩阵
+
+## 行列秩都不满的矩阵 {% math %}r<m, r<n{% endmath %}
+
+ 有 $0$ 解或无穷解,  如果 $b$ 的行和$A$ 的行向量之间有相同的组合关系，那有无穷解，否则有 $0$ 解
+
+例子
+
+![](4054319428_r0mn.png)
 
 ## 秩的总结（很重要）：
 
 {% math %}\begin{array}{c|c|c|c}r=m=n&r=n\lt m&r=m\lt n&r\lt m,r\lt n\\R=I&R=\begin{bmatrix}I\\0\end{bmatrix}&R=\begin{bmatrix}I&F\end{bmatrix}&R=\begin{bmatrix}I&F\\0&0\end{bmatrix}\\1\ solution&0\ or\ 1\ solution&\infty\ solution&0\ or\ \infty\ solution\end{array}${% endmath %}
 
+
+[线性代数(十二) : 线性方程组Ax=b可解性与解的结构 - 方橙
+        - CSDN博客](http://blog.csdn.net/mathmetics/article/details/9312639)
