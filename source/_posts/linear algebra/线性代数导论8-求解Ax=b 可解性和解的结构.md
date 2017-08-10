@@ -187,5 +187,4 @@ A=
 {% math %}\begin{array}{c|c|c|c}r=m=n&r=n\lt m&r=m\lt n&r\lt m,r\lt n\\R=I&R=\begin{bmatrix}I\\0\end{bmatrix}&R=\begin{bmatrix}I&F\end{bmatrix}&R=\begin{bmatrix}I&F\\0&0\end{bmatrix}\\1\ solution&0\ or\ 1\ solution&\infty\ solution&0\ or\ \infty\ solution\end{array}${% endmath %}
 
 
-[线性代数(十二) : 线性方程组Ax=b可解性与解的结构 - 方橙
-        - CSDN博客](http://blog.csdn.net/mathmetics/article/details/9312639)
+[线性代数(十二) : 线性方程组Ax=b可解性与解的结构 - CSDN博客](http://blog.csdn.net/mathmetics/article/details/9312639)
