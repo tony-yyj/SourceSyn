@@ -1,5 +1,5 @@
 ---
-title: 线性代数导论8-求解Ax=b 可解性和解的结构
+title: 线性代数导论(8)-求解Ax=b 可解性和解的结构(最新讲义)
 tags: 线性代数
 categories: 线性代数
 abbrlink: 4054319428

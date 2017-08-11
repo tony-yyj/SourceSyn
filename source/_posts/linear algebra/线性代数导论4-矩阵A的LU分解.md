@@ -1,5 +1,5 @@
 ---
-title: 线性代数导论4-矩阵A的LU分解
+title: 线性代数导论(4)-矩阵A的LU分解(最新讲义)
 tags: 线性代数
 categories: 线性代数
 abbrlink: 2283559014
