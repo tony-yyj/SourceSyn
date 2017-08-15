@@ -1,6 +1,7 @@
 ---
 title: Hello World
 abbrlink: 1243066710
+alias: 1243066710/
 ---
 
 <blockquote class="blockquote-center">马上学，一切就是这么简单</blockquote>
