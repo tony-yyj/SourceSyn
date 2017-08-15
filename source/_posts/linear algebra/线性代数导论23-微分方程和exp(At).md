@@ -2,6 +2,7 @@
 title: 线性代数导论(23)-微分方程和exp(At)(最新讲义)
 tags: 线性代数
 categories: 线性代数
+abbrlink: 1756604500
 date: 2017-08-15 13:13:13
 ---
 
