@@ -12,39 +12,32 @@ date: 2017-09-01 16:50:50
 <!-- toc -->
 <!-- more -->
 # 1. 常见层
-[【TensorFlow】tf.nn.local_response_normalization详解，lrn正则法如何计算？ - xf__mao的博客  - CSDN博客](http://blog.csdn.net/mao_xiao_feng/article/details/53488271)
-
-[ImageNet Classification with deep convolutional neural networks - 家家的专栏   - CSDN博客](http://blog.csdn.net/yihaizhiyan/article/details/26962607)
-
-[Tensorflow的LRN是怎么做的](http://www.jianshu.com/p/c06aea337d5d)
-
-[使用TensorFlow编写识别数字的CNN训练程序详解 - ligang_csdn的博客 - CSDN博客](http://blog.csdn.net/ligang_csdn/article/details/53967031)
         
-一个神经网络架构要成为CNN，必须至少包含一个卷积层（tf.nn.conv2d）。
-单层CNN的一种实际用途是检测边缘。
+一个神经网络架构要成为CNN，必须至少包含一个卷积层（tf.nn.conv2d）。单层CNN的一种实际用途是检测边缘。
+
 对于图像识别和分类任务而言，更常见的情形是使用不同的层类型支持某个卷积层。这些层有助于减少过拟合，并可加速训练过程和降低内存占用率。
 
 下面所介绍的层主要集中于那些在CNN架构中经常使用的层上。CNN可使用的层并非只局限于这些层，它们完全可以与为其他网络架构设计的层混合使用。
 
-## 1.1. 卷积层
+# 2. 卷积层
 
 卷积与TensorFlow所采用的运算的差异主要体现在性能上。TensorFlow采用了一种可对所有不同类型的卷积层中的**卷积运算进行加速**的技术。
 
 每种类型的卷积层都有一些用例，但tf.nn.conv2d是一个较好的切入点。其他类型的卷积也十分有用，但在构建能够完成目标识别和分类任务的网络时，并不需要它们。下面对这些卷积类型做一简要概括。
 
-### 1.1.1. tf.nn.depthwise_conv2d
+## 2.1. tf.nn.depthwise_conv2d
 
 当需要将**一个卷积层的输出连接到另一个卷积层的输入**时，可使用这种卷积。一种高级用例是利用tf.nn.depthwise_conv2d创建一个遵循Inception架构的网络（参见https://arxiv.org/abs/1512.00567）。
 
-### 1.1.2. tf.nn.separable_conv2d
+## 2.2. tf.nn.separable_conv2d
 
 它与tf.nn.conv2d类似，但并非后者的替代品。**对于规模较大的模型**，它可在不牺牲准确率的前提下实现训练的加速。对于规模较小的模型，它能够快速收敛，但准确率较低。
 
-### 1.1.3. tf.nn.conv2d_transpose
+## 2.3. tf.nn.conv2d_transpose
 
 它将一个卷积核应用于一个新的特征图，后者的每一部分都填充了与卷积核相同的值。当该卷积核遍历新图像时，任何重叠的部分都相加在一起。这就很好地解释了斯坦福大学课程CS231n Winter 2016：Lecture 13中关于如何将tf.nn.conv2d_transpose用于可学习的降采样的问题。
 
-## 1.2. 激活函数
+# 3. 激活函数
 
 这些函数与其他层的输出联合使用可生成特征图。它们用于对某些运算的结果进行平滑（或微分）。其目标是为神经网络**引入非线性**。
 
@@ -61,7 +54,7 @@ TensorFlow提供了多种激活函数。在CNN中，人们之所以主要使用t
 
 任何满足这些条件的函数都可用作激活函数。在TensorFlow中，有少量激活函数值得一提，它们在各种CNN架构中都极为常见。下面给出这些激活函数的简要介绍，并通过一些示例代码片段来说明其用法。
 
-### 1.2.1. tf.nn.relu
+## 3.1. tf.nn.relu
 
 在某些文档中，修正线性单元也被称为斜坡函数，因为它的图形与滑板的斜坡非常相似。
 
@@ -83,7 +76,7 @@ sess.run([features, tf.nn.relu(features)])
 
 在这个例子中，输入为一个由[-2，3]内的整数构成的秩1张量（向量）。tf.nn.relu会将那些小于0的分量置为0，而保持其余分量不变。
 
-### 1.2.2. tf.sigmoid
+## 3.2. tf.sigmoid
 
 sigmoid函数的返回值位于区间[0.0，1.0]中。当输入值较大时，tf.sigmoid将返回一个接近于1.0的值，而输入值较小时，返回值将接近于0.0。对于在那些真实输出位于[0.0，1.0]的样本上训练的神经网络，sigmoid函数可将输出保持在[0.0，1.0]内的能力非常有用。当输入接近饱和或变化剧烈时，对输出范围的这种缩减往往会带来一些不利影响。
 
@@ -102,7 +95,7 @@ sess.run([features, tf.sigmoid(features)])
 
 在本例中，一组整数被转化为浮点类型（1变为1.0），并传入一个sigmoid函数。当输入为0时，sigmoid函数的输出为0.5，即sigmoid函数值域的中间点。
 
-### 1.2.3. tf.tanh
+## 3.3. tf.tanh
 
 双曲正切函数（tanh）与tf.sigmoid非常接近，且与后者具有类似的优缺点。tf.sigmoid和tf.tanh的主要区别在于后者的值域为[-1.0，1.0]。在某些特定的网络架构中，**能够输出负值的能力可能会非常有用**。
 
@@ -119,7 +112,7 @@ sess.run([features, tf.tanh(features)])
 
 在本例中，所有的设置均与上述tf.sigmoid例子相同，但输出却存在重要的差异。tf.tanh值域的中间点为0.0。当网络中的下一层期待输入为负值或0.0时，这可能会引发一些问题。
 
-### 1.2.4. tf.nn.dropout
+## 3.4. tf.nn.dropout
 
 依据某个可配置的概率将输出设为0.0。当引入少量随机性有助于训练时，这个层会有很好的表现。一种适合的场景是：当**要学习的一些模式与其近邻特征耦合过强时**。这种层会为所学习到的输出**添加少量噪声**。
 
@@ -140,11 +133,11 @@ sess.run([features, tf.nn.dropout(features, keep_prob=0.5)])
 
 在这个例子中，输出有50%的概率能够得到保持。每次执行该层时，都将得到不同的输出（带有一些随机性）。当某个输出被丢弃时，它的值被设为0.0。
 
-## 1.3. 池化层
+# 4. 池化层
 
 池化层能够**减少过拟合**，并通过减小输入的尺寸来提高性能。它们可用于对输入降采样，但会为后续层保留重要的信息。只使用tf.nn.conv2d来减小输入的尺寸也是可以的，但池化层的效率更高。
 
-### 1.3.1. tf.nn.max_pool
+## 4.1. tf.nn.max_pool
 
 跳跃遍历某个张量，并从被卷积核覆盖的元素中找出最大的数值作为卷积结果。当输入数据的灰度与图像中的重要性相关时，这种池化方式非常有用。
 
@@ -181,7 +174,7 @@ layer_input是一个形状类似于tf.nn.conv2d或某个激活函数的输出的
 
 最大池化（max-pooling）通常是利用2×2的接受域（高度和宽度均为2的卷积核）完成的，它通常也被称为“2×2的最大池化运算”。使用2×2的接受域的原因之一在于它是在单个通路上能够实施的**最小数量的降采样**。如果使用1×1的接受域，则输出将与输入相同。
 
-### 1.3.2. tf.nn.avg_pool
+## 4.2. tf.nn.avg_pool
 
 跳跃遍历一个张量，并将被卷积核覆盖的各深度值取平均。当整个卷积核都非常重要时，若需实现值的缩减，平均池化是非常有用的，例如输入张量宽度和高度很大，但深度很小的情况。
 
@@ -219,14 +212,14 @@ $$
 (\dfrac{1.0 + 1.0 + 1.0 + 1.0 + 0.5 + 0.0 + 0.0 + 0.0 + 0.0}{9.0})
 $$
 
-## 1.4. 归一化
+# 5. 归一化
 
 归一化的目标之一在于将输入保持在一个可接受的范围内。
 > 例如，将输入归一化到 `[0.0，1.0]` 区间内将使输入中所有可能的分量归一化为一个大于等于0.0且小于等于1.0的值。
 
 归一化层并非CNN所独有。在使用tf.nn.relu时，考虑输出的归一化是有价值的。由于ReLU是无界函数，利用某些形式的归一化来**识别那些高频特征**通常是十分有用的。
 
-### 1.4.1. 局部响应归一化
+## 5.1. 局部响应归一化
 
 ```
 tf.nn.local_response_normalization(input, depth_radius=None, bias=None, alpha=None, beta=None, name=None)
@@ -254,7 +247,7 @@ https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutiona
 
 根据Stanford的CS231所讲，最近LRN用的并不多，http://cs231n.github.io/
 
-### 1.4.2. 代码举例：
+## 5.2. 代码举例：
 ```python
 # Create a range of 3 floats.
 #  TensorShape([batch, image_height, image_width, image_channels])
@@ -278,11 +271,11 @@ sess.run([layer_input, lrn])
 
 在上述示例代码中，归一化会将输出调整到区间[-1.0，1.0]中。归一化层tf.nn.relu会将其无界的输出调整到相同的范围内。
 
-## 1.5. 高级层
+# 6. 高级层
 
 为使标准层的定义在创建时更加简单，TensorFlow引入了一些高级网络层。这些层不是必需的，但它们有助于减少代码冗余，同时遵循最佳的实践。开始时，这些层需要为数据流图添加大量非核心的节点。在使用这些层之前，投入一些精力了解相关基础知识是非常值得的。
 
-### 1.5.1. tf.contrib.layers.convolution2d
+## 6.1. tf.contrib.layers.convolution2d
 
 https://www.tensorflow.org/api_docs/python/tf/contrib/layers/conv2d#tfcontriblayersconvolution2d
 
@@ -333,7 +326,7 @@ array([[[[   0.        ,    0.        ,    0.        ,    0.        ],
 
 在这段示例代码中，使用了浮点值255.0，这并不是TensorFlow用浮点值表示图像所期望的方式。TensorFlow要求用浮点型描述图像颜色时，应当将各颜色分量控制在[0，1]范围内。
 
-### 1.5.2. tf.contrib.layers.fully_connected
+## 6.2. tf.contrib.layers.fully_connected
 
 https://www.tensorflow.org/api_docs/python/tf/contrib/layers/fully_connected
 
@@ -361,7 +354,17 @@ array([[[ 0.,  0.],
 
 这个例子创建了一个全连接层，并将输入张量与输出层中的每个神经元建立了连接。对于不同的全连接层，还有大量其他参数需要调整。
 
-## 1.6. 输入层
+# 7. 输入层
 
 在任何神经网络中，输入层都至关重要。无论是训练还是测试，原始输入都需要传递给输入层。对于目标识别与分类，输入层为`tf.nn.conv2d`，它负责接收图像。接下来的步骤是在训练中使用真实图像，而非tf.constant或tf.range变量形式的样例输入。
 
+
+# 8. 参考文献：
+
+* [【TensorFlow】tf.nn.local_response_normalization详解，lrn正则法如何计算？ - xf__mao的博客  - CSDN博客](http://blog.csdn.net/mao_xiao_feng/article/details/53488271)
+
+* [ImageNet Classification with deep convolutional neural networks - 家家的专栏   - CSDN博客](http://blog.csdn.net/yihaizhiyan/article/details/26962607)
+
+* [Tensorflow的LRN是怎么做的](http://www.jianshu.com/p/c06aea337d5d)
+
+* [使用TensorFlow编写识别数字的CNN训练程序详解 - ligang_csdn的博客 - CSDN博客](http://blog.csdn.net/ligang_csdn/article/details/53967031)

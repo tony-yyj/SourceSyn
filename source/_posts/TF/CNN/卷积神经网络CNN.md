@@ -43,12 +43,10 @@ CNN可用于能够表示为张量（各个分量与其相关的分量有序排�
 可用一种比较简明的定义描述卷积： 卷积的目的是将卷积核（滤波器）应用到某个张量的所有点上， 并通过将卷积核在输入张量上滑动而生成经过滤波处理的张量。
 
 图像处理中的边缘检测便是滤波输出的一个典型例子:
-一个特殊的卷积核被应用到图像中的每个像素，而输出为一个刻画了所有边缘的新图像。
-
-![conv](https://wkbos.bdimg.com/v1/docconvert5500//book/aee18fae1875db2692c2fd6ca7f4570c/bed3218a6dd6ed9560c13a6a9ab4c26b.jpg?responseContentType=image%2Fjpeg&responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2019%20Aug%202017%2017%3A30%3A08%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2017-07-05T09%3A30%3A08Z%2F7200%2Fhost%2F6bfe59de257c7c8f2102e562c26f274bc2b4fe5da69cb20408afc2088cf08b6f&token=6c1977ae6e9b619c67a4f41301d7670dddb290c80414ed336100d94f95e8ad93&expire=2017-07-05T11:30:08Z)
-
+下图，一个特殊的卷积核被应用到图像中的每个像素，而输出为一个刻画了所有边缘的新图像。
 该图中的g(t)需要修改为[-1 -2 -1; 0 0 0; 1, 2, 1]，按照图中给出的模板检测到的边缘是不具有方向性的。
-[](CNNconv.png)
+
+![](3562541505_conv1.png)
 
 在这种情形下，输入张量是一幅图像，而张量中的每个点都对应于一个像素所包含的红色值、绿色值和蓝色值。卷积核会遍历图像中的每个像素，任何位于**边缘的像素对应的卷积输出值都会增大**。
 
@@ -72,9 +70,7 @@ CNN遵循了一个简化的信息匹配过程，这非常类似于在猴子纹�
 
 如果没有这些层，模型便很难与复杂的模式匹配，因为网络将被填充过多的信息。一个设计良好的CNN架构会**突出**那些**重要的信息**，而将**噪声忽略**。稍后的内容将详细介绍这些层如何协同工作。
 
-![CNN](https://wkbos.bdimg.com/v1/docconvert5500//book/aee18fae1875db2692c2fd6ca7f4570c/b07b8be487141351eba6bf46d7d11fba.jpg?responseContentType=image%2Fjpeg&responseCacheControl=max-age%3D3888000&responseExpires=Sat%2C%2019%20Aug%202017%2017%3A30%3A08%20%2B0800&authorization=bce-auth-v1%2Ffa1126e91489401fa7cc85045ce7179e%2F2017-07-05T09%3A30%3A08Z%2F7200%2Fhost%2F48c6ba042aee760ad7d1d89818e424404788ca8e810734601821b0b16ab2751a&token=361138285820352691f186f305e9e9825f7cc7c300c739d18d87fb331d3b1f6e&expire=2017-07-05T11:30:08Z)
-
-[](CNNFrame.png)
+[](3562541505_CNNFrame.png)
 
 这个架构的图像输入遵循一种复杂的格式，以支持图像的批量加载。
 批量加载图像使得可同时对多幅图像进行处理，但也相应地要求使用更为复杂的数据结构。所使用的数据结构中包含了与一批图像进行卷积运算所需的全部信息。
@@ -405,7 +401,7 @@ activation_map = sess.run(tf.minimum(tf.nn.relu(conv2d), 255))
 
 ```
 
-![example-sharpen.png](example-sharpen.png)
+![](example-sharpen.png)
 
 这个卷积核的作用是**增加卷积核中心位置像素的灰度，并降低周围像素的灰度**。这种灰度的调整能够匹配那些具有较强灰度的像素的模式，并提升它们的灰度，从而使输出在视觉上呈现出锐化的效果。
 请注意，这里的卷积核四角的元素均为0，并不会对“+”形状的模式产生影响。
@@ -424,4 +420,4 @@ activation_map = sess.run(tf.minimum(tf.nn.relu(conv2d), 255))
 
 # 6. 常见层
 
-[CNN Layer](CNN Layer.md)
+
