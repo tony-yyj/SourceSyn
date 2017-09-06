@@ -52,16 +52,16 @@ done
 
 快捷键Ctrl+C取消输入状态，然后输入 `:wq`
 
-## 3.5. 给test.sh可执行权限
+## 3.5. 给homeusage.sh可执行权限
 
 chmod +x homeusage.sh
 
-## 3.6. 执行./test.sh命令
+## 3.6. 执行./homeusage.sh命令
 
 ```
-mark@mashangxue123.com:~$ touch a.sh
-mark@mashangxue123.com:~$ vi a.sh
-mark@mashangxue123.com:~$ ./a.sh
+mark@mashangxue123.com:~$ touch homeusage.sh
+mark@mashangxue123.com:~$ vi homeusage.sh
+mark@mashangxue123.com:~$ ./homeusage.sh
 
 root@omnisky:/home/mark# . homeusage.sh
 80K	/home/ellie
