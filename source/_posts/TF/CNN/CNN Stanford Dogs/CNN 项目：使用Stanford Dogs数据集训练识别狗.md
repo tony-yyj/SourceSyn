@@ -22,7 +22,7 @@ date: 2017-09-04 18:18:18
 
 我们的网络架构采取了Alex Krizhevsky的AlexNet的简化版本，但并未使用AlexNet的所有层。（AlexNet是ILSVRC2012挑战赛的冠军）
 
-![3860810347_network-architecture.png](network-architecture.png)
+![](3860810347_network-architecture.png)
 
 从上图可以看出，网络包含每层之后的输出TensorShape。这些层按照自左向右、自上向下的顺序被依次读取，且存在关联的层被分为一组。当输入经过网络时，其高度和宽度都会减小，而其深度会增加。**深度值的增加减少**了使用该网络所需的**计算量**。
 
