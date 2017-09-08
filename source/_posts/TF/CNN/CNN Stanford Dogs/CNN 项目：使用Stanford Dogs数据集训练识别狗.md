@@ -233,7 +233,7 @@ image_batch, label_batch = tf.train.shuffle_batch(
 
 ## 5.1. 模型
 
-![network-architecture.png](network-architecture.png)
+![](3860810347_network-architecture.png)
 
 ## 5.2. 模型第1层代码：
 
