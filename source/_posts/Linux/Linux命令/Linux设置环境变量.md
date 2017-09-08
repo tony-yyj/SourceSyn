@@ -3,6 +3,7 @@ title: Linux设置环境变量
 tags:
   - Linux
 categories: Linux
+abbrlink: 2613038403
 date: 2017-09-08 20:00:00
 ---
 命令：`vi ~/.bash_profile` 添加  `export PATH=$PATH:yourpath1`

@@ -4,6 +4,7 @@ tags:
   - Linux
   - Mac
 categories: Linux
+abbrlink: 2816117882
 date: 2017-09-08 19:00:00
 ---
 命令：`vi ~/.bash_profile` 添加  `export PATH=$PATH:yourpath1`

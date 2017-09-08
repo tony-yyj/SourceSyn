@@ -1,8 +1,9 @@
 ---
-title:  如何下载SlideShare的PPT
+title: 如何下载SlideShare的PPT
 tags:
   - PPT
 categories: note
+abbrlink: 3436209124
 date: 2017-09-08 21:30:00
 ---
 <!-- toc -->

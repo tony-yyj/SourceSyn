@@ -3,6 +3,7 @@ title: 如何在markdown中插入数学公式
 tags:
   - markdown
 categories: markdown
+abbrlink: 902675789
 date: 2017-09-08 21:00:00
 ---
 <!-- toc -->
