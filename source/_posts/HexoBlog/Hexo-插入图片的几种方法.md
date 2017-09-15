@@ -15,7 +15,7 @@ alias: 1322489026/
 
 在主题的 source 下面新建一个 文件夹（比如uploads）用于专门放置这些图片资源。
 
-使用的时候使用```![](/uploads/test.jpg)```的方式。
+使用的时候使用`![](/uploads/test.jpg)`的方式。
 
 # 2. Hexo方式post_asset_folder
 
@@ -23,13 +23,14 @@ alias: 1322489026/
 
 - 执行命令`npm install hexo-asset-image --save` ，下载安装一个可以上传本地图片的插件：
 
-- 使用的时候，只需要图片名就可以 ``` ![](test.jpg)```
+- 使用的时候，只需要图片名就可以 ` ![](test.jpg)`
 
-- 也可以使用Hexo推荐的标签方式 ``` {% asset_img example.jpg This is an example image %}```
+- 也可以使用Hexo推荐的标签方式 `{% asset_img example.jpg This is an example image %}`
 
 # 3. 网络图片插入
 
 可以把你的图片上传到 七牛之类的服务器，然后直接按照markdown的方式使用。
+例如可以使用github作为图床，
 
 # 4. 其他语法
 
